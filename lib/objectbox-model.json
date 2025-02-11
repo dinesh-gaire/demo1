@@ -1,0 +1,149 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:8187999703906773452",
+      "lastPropertyId": "7:3527736696144607377",
+      "name": "Message",
+      "properties": [
+        {
+          "id": "1:1003110117452166693",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "3:1192388491110896687",
+          "name": "content",
+          "type": 9
+        },
+        {
+          "id": "4:903732793977443783",
+          "name": "timestamp",
+          "type": 10
+        },
+        {
+          "id": "6:6136278220559597275",
+          "name": "otherUserId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "5:1915711445095790327",
+          "relationTarget": "OtherUserEntity"
+        },
+        {
+          "id": "7:3527736696144607377",
+          "name": "isFromMe",
+          "type": 1
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5724338621875103901",
+      "lastPropertyId": "7:5945036230008491017",
+      "name": "OtherUserEntity",
+      "properties": [
+        {
+          "id": "1:6883466648741886162",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "3:1474134683984528944",
+          "name": "publicKey",
+          "type": 9
+        },
+        {
+          "id": "4:5226730825950200721",
+          "name": "chatEncryptionKey",
+          "type": 9
+        },
+        {
+          "id": "5:1293690579684862797",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "6:320350087460007259",
+          "name": "uniqueId",
+          "type": 9
+        },
+        {
+          "id": "7:5945036230008491017",
+          "name": "pathToImage",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1916411115322574982",
+      "lastPropertyId": "7:933893555826692766",
+      "name": "SelfUserEntity",
+      "properties": [
+        {
+          "id": "1:3635407982183527746",
+          "name": "id",
+          "type": 6,
+          "flags": 129
+        },
+        {
+          "id": "3:1495579614547240349",
+          "name": "privateKey",
+          "type": 9
+        },
+        {
+          "id": "4:1996077450670915037",
+          "name": "publicKey",
+          "type": 9
+        },
+        {
+          "id": "5:1260602398731655493",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "6:787478615307381340",
+          "name": "uniqueId",
+          "type": 9
+        },
+        {
+          "id": "7:933893555826692766",
+          "name": "pathToImage",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:6477876753457036233",
+  "lastIndexId": "5:1915711445095790327",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    6477876753457036233
+  ],
+  "retiredIndexUids": [
+    8863063282642465184,
+    7751898058956551536,
+    7139292634974563498,
+    6983944342967712945
+  ],
+  "retiredPropertyUids": [
+    7170761976200550723,
+    3699254129375644241,
+    7284920529040335830,
+    1011271634737175025,
+    4445083271632496100,
+    3981049419482940242,
+    6985617820930020482,
+    2254311068738113434
+  ],
+  "retiredRelationUids": [],
+  "version": 1
+}

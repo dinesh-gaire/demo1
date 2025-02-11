@@ -1,0 +1,110 @@
+1. Core Functionalities
+✅ Device Discovery
+
+ Implement local network-based (Wi-Fi/Ethernet) device discovery
+ Implement hotspot-based discovery when no network is available
+ Show a list of nearby available devices
+✅ Friend System
+
+ Ability to send a friend request
+ Accept/reject friend requests
+ Implement mutual authentication before connection
+ Store friends in an encrypted local database
+✅ Encryption & Security
+
+ Generate unique public-private key pairs for each user
+ Secure key exchange upon friend request acceptance
+ End-to-end encrypt messages and file transfers
+ Encrypt user database using AES-256
+ Implement self-destruct messages (optional)
+✅ Chat System
+
+ Real-time messaging
+ Message delivery status (sent, delivered, read)
+ Offline message storage and sync when the device is online
+ Encrypted local chat history storage
+ Support for text, images, and file sharing
+✅ File Sharing
+
+ Peer-to-peer file transfer over Wi-Fi/hotspot
+ Display transfer progress UI
+ Resume interrupted transfers
+✅ Notifications & Background Processes
+
+ Implement push notifications for new messages
+ Keep essential services running in the background
+ Ensure efficient battery usage
+✅ Database & Storage
+
+ Use SQLite for encrypted local storage
+ Store messages, contacts, and metadata securely
+ Implement automatic database cleanup for performance
+✅ Settings & Customization
+
+ Allow username and profile picture customization
+ Provide theme customization (light/dark mode)
+ Add backup & restore functionality
+✅ Error Handling & Logs
+
+ Implement graceful error handling
+ Provide debug logs for troubleshooting
+2. UI & UX
+✅ Onboarding
+
+ Welcome screen with app introduction
+ Simple account setup with a unique identifier
+✅ Chat Interface
+
+ Clean, user-friendly chat screen
+ Show timestamps, message status (sent, delivered, read)
+ Swipe to reply, delete, or react to messages
+✅ Contacts & Friends List
+
+ Show a list of added friends with online/offline status
+ Allow blocking/unblocking users
+✅ File Transfer UI
+
+ File selection interface with preview
+ Transfer progress indicator
+✅ Settings & Profile Page
+
+ Profile customization (name, avatar, bio)
+ Privacy & security settings
+✅ Animations & Transitions
+
+ Smooth page transitions
+ Message bubble animations
+3. Performance & Optimization
+✅ Low Latency Communication
+
+ Optimize data transmission for speed
+ Reduce packet loss in weak connections
+✅ Battery & Resource Optimization
+
+ Implement background task scheduling
+ Reduce unnecessary wake-ups
+✅ App Size & Dependencies
+
+ Keep APK size minimal
+ Use efficient third-party packages
+✅ Multi-Device Support
+
+ Ensure compatibility across Android & iOS
+4. Testing & Deployment
+✅ Unit & Integration Testing
+
+ Test encryption & key exchange
+ Validate device discovery under various network conditions
+ Check chat reliability in real-world usage
+✅ User Experience Testing
+
+ Conduct usability tests
+ Improve UI based on user feedback
+✅ Security Testing
+
+ Perform penetration testing
+ Test against replay attacks and MITM
+✅ Final Deployment
+
+ Prepare for Play Store & App Store submission
+ Ensure compliance with platform guidelines
